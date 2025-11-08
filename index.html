@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cifrador Clásico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cifrador y Descifrador Clásico</h1>
+    
+    <label>Texto:</label>
+    <textarea id="inputText" placeholder="Escribe tu texto aquí..."></textarea>
+
+    <label>Clave (si aplica):</label>
+    <input type="text" id="keyInput" placeholder="Ejemplo: 3 o PALABRA">
+
+    <label>Algoritmo:</label>
+    <select id="algorithm">
+        <option value="cesar">Cifrado César</option>
+        <option value="vigenere">Cifrado Vigenère</option>
+        <option value="transposicion">Transposición Columnar</option>
+        <option value="atbash">Cifrado Atbash</option>
+    </select>
+
+    <div class="buttons">
+        <button onclick="encrypt()">Cifrar</button>
+        <button onclick="decrypt()">Descifrar</button>
+    </div>
+
+    <h3>Resultado:</h3>
+    <textarea id="outputText" readonly></textarea>
+
+    <script src="script.js"></script>
+</body>
+</html>
